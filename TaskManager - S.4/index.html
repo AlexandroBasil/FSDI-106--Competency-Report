@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+    <!-- navBar -->
+    <nav class="navbar navbar-light" style="background-color: #88474B">
+        <div class="container-fluid">
+            <a class="navbar-brand"><h1>My Ultimate Task Manager</h1></a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        
+
+        <section id="capture-form">
+            <h3>Tasks Details</h3>
+            <div class="form">
+
+                <div class="control">
+                    <label class="form-label">Title</label>
+                    <input id="txtTitle" for="text" class="form-control"></input>
+                </div>
+
+                <div class="control">
+                    <label class="form-label">Star task</label>
+                    <i id="iStar" class="far fa-star"></i>
+                </div>
+
+                <div class="control">
+                    <label class="form-label">Description</label>
+                    <textarea id="txtDescription" class="form-control"></textarea>
+                </div>
+                
+                <div class="control">
+                    <label class="form-label">Location</label>
+                    <input id="txtLocation" for="text" class="form-control"></input>
+                </div>
+
+                <div class="control">
+                    <label class="form-label">Due Date</label>
+                    <input id="selDueDate" for="date" class="form-control"></input>
+                </div>
+
+                <div class="control">
+                    <label class="form-label">Category</label>
+                    <div class="categoryTxtSel">
+                        <select id="selCategory" class="form-select">
+                            <option selected disabled>-- Select Category --</option>
+                            <option value="1">General Task</option>
+                            <option value="2">School</option>
+                            <option value="3">Work</option>
+                            <option value="4">Leisure Activities</option>
+                            <option value="5">Other</option>
+                        </select>
+                        <input id="txtCategory" type="text" placeholder="Type Your Category" class="form-control hide"></input>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <label class="form-label">Label Color</label>
+                    <input id="selColor" type="color" class="form-control"></input>
+                </div>
+
+                <div class="control">
+                    <button id="btnSave" class="btn btn-dark">Save Task</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="list"> <!-- this will be my list of tasks-->
+            <h3>List of Task
+                <button id="btnDisplay" class="btn btn-sm btn-info">Show/Hide</button>
+            </h3>
+
+            <div id="pendingTasks"><h4>Need To Do Tasks</h4></div>
+
+            <div id="doneTasks"><h4>Done Tasks</h4></div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Script/task.js"></script>
+    <script src="Script/script.js"></script>
+</body>
+</html>

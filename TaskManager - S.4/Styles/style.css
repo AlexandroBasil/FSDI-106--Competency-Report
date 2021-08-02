@@ -1,0 +1,125 @@
+:root {
+    --text-color: #FFF5F1;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body main.container-fluid {
+    height: calc(100vh - 77px);
+    padding-left: 0;
+}
+
+body {
+    color: black;
+    background-color: #FFF5F1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+/* hide */
+.hide {
+    display: none;
+}
+
+/* Divide the sections */
+.container-fluid {
+    display: flex;
+    align-items: stretch;
+    
+}
+
+#capture-form {
+    flex: 2;
+}
+
+#list {
+    flex: 4;
+}
+
+/* Other category selected */
+.categoryTxtSel {
+    display: flex;
+}
+
+#selCategory {
+    flex: 1;
+}
+
+#txtCategory {
+    margin-left: 7px;
+    flex: 3;
+}
+
+/* Importance Selector */
+#iStar {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#iStar.far{
+    color: grey;
+}
+
+#iStar.fas{
+    color: goldenrod
+}
+
+/* Capture form style */
+#capture-form {
+    background-color: #F08B7B;
+    padding: 1rem;
+}
+
+.form-label {
+    margin-top: 1rem;
+}
+
+#btnSave {
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+/* List of tasks */
+#list {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-left: .5rem;
+}
+
+.task {
+    background-color: #FFC8CA;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgb(184, 0, 0);
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 1rem 0;
+}
+
+.task i,
+.task button {
+    flex: 1;
+}
+
+.task .location,
+.task .due-date {
+    flex: 2;
+}
+
+.task .description {
+    flex: 9;
+}
